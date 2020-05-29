@@ -7,20 +7,20 @@ Resources:
     Properties:
       StageName: dev
 
-  HelloFunction:
+  Test:
     Type: "AWS::Serverless::Function"
     Properties:
-      Handler: hello.handler
+      Handler: dino.handler
       Runtime: provided
-      CodeUri: ./hello
+      CodeUri: ./src
       Layers:
-        - <your-layer-arn>
+        - <layer ARN Here>
       Events:
         HelloAPI:
           Type: Api
           Properties:
             RestApiId: !Ref MyApi
-            Path: /hello
+            Path: /dino
             Method: GET
 
 Outputs:
