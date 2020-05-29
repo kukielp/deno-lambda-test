@@ -14,7 +14,7 @@ Resources:
       Runtime: provided
       CodeUri: ./src
       Layers:
-        - <layer ARN Here>
+        - <Dino Layer ARN Here>
       Events:
         HelloAPI:
           Type: Api
